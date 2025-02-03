@@ -72,7 +72,7 @@ export function Header() {
         <Container className="relative z-50 flex items-center justify-between py-8">
           <div className="relative z-10 flex items-center gap-16">
             <Link href="/" aria-label="Home" className="text-2xl text-cyan-100">
-              Tron Cate
+              Tron Wallet
             </Link>
             <div className="hidden lg:flex lg:gap-10">
               <NavLinks />
@@ -119,22 +119,13 @@ export function Header() {
                           className="absolute inset-x-0 top-0 z-0 origin-top rounded-b-2xl bg-gray-50 px-6 pb-6 pt-32 shadow-2xl shadow-gray-900/20"
                         >
                           <div className="space-y-4">
-                            <MobileNavLink href="#">Swap</MobileNavLink>
+                            <MobileNavLink href="#">Wallet</MobileNavLink>
                             <MobileNavLink href="#">
                               Documentation
                             </MobileNavLink>
                           </div>
 
-                          <div className="mt-4 flex flex-col space-y-4">
-                            <Button
-                              href="https://github.com/swing-xyz/examples/tree/main/examples/swaps-api-nextjs-tron"
-                              className="space-x-2 text-zinc-900"
-                              variant="outline"
-                            >
-                              <FontAwesomeIcon size="lg" icon={faGithub} />
-                              <span className="">Fork on Github</span>
-                            </Button>
-                          </div>
+                          
                         </Popover.Panel>
                       </>
                     )}
@@ -143,14 +134,7 @@ export function Header() {
               )}
             </Popover>
 
-            <Button
-              href="https://github.com/swing-xyz/examples/tree/main/examples/swaps-api-nextjs-tron"
-              className="hidden space-x-2 text-white lg:block"
-              variant="outline"
-            >
-              <FontAwesomeIcon size="lg" icon={faGithub} />
-              <span>Fork on Github</span>
-            </Button>
+          
           </div>
         </Container>
       </nav>
